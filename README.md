@@ -5,6 +5,6 @@ Based on `alpine:3.5`
 Provides:
 
 - python3, pip3
-- postgresql-dev
+- psycopg2 (pip3)
 - nginx
 - supervisor
