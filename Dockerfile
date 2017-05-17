@@ -14,3 +14,6 @@ RUN apk add --no-cache \
 # nginx
 RUN rm /etc/nginx/conf.d/default.conf
 RUN mkdir /run/nginx
+
+# supervisor
+RUN mkdir -p /var/log/supervisor
