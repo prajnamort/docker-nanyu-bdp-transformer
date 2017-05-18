@@ -6,9 +6,9 @@ RUN apk add --no-cache python3
 
 # psycopg2 (pip3)
 RUN apk add --no-cache postgresql-dev \
-    && apk add --no-cache --virtual psycopg2-build-deps gcc libc-dev python3-dev \
+    && apk add --no-cache --virtual .psycopg2-deps gcc libc-dev python3-dev \
     && pip3 install psycopg2==2.7.1 \
-    && apk del psycopg2-build-deps
+    && apk del --no-cache .psycopg2-deps
 
 # nginx
 RUN apk add --no-cache nginx \
