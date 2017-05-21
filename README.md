@@ -6,5 +6,6 @@ Provides:
 
 - python3, pip3
 - psycopg2 (pip3)
+- py3-cryptography
 - nginx
 - supervisor

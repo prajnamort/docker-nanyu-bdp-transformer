@@ -10,6 +10,9 @@ RUN apk add --no-cache postgresql-dev \
     && pip3 install psycopg2==2.7.1 \
     && apk del --no-cache .psycopg2-deps
 
+# py3-cryptography
+RUN apk add --no-cache py3-cryptography
+
 # nginx
 RUN apk add --no-cache nginx \
     && rm /etc/nginx/conf.d/default.conf \
